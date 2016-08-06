@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!--  Programmer : Maya Ahmed 
+      Files: index.html; tictactoe.css; tictactoe.js 
+      These files contains the codes for the Tic Tac Toe game
+      Reference:  HTML5 Game  Development  Tutorials by  VCR
+      Games, Youtube.
+      Date: "July 19 2016" 
+-->
+
+
+	<head>
+		<meta charset="utf-8" />
+		<title>Punjiri: Web and Mobile Technologies.</title>
+		<link rel="stylesheet" type="text/css" href="tictactoe.css">
+	</head>
+	<body>
+
+	
+		<div id="big_wrapper">
+
+          <div id="topStuff">
+
+          <header id="top_header">
+				<p>Tic Tac Toe </p>
+<p id="flag"> Advanced game </p> 
+			</header>
+
+			<nav id="top_menu">
+				<ul>
+                  <li>
+                  <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn">Levels </button>
+                    <div id="myDropdown" class="dropdown-content">
+                      <a href="index.html">Standard  </a>
+                      <a href="advancedIndex.html">Advanced </a>
+                     
+                    </div>
+                  </div>
+                  </li>
+
+                  <li>
+                    <div id="myNav" class="overlay">
+                      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"> &times;</a>
+                      <div class="overlay-content">
+                       <p> &copy; Punjiri Web and Mobile Technologies, 2016. </p>
+                       <p> Email: maya.ahmed@gmail.com</p>
+                      </div>
+                    </div>
+                    <span style="font-size:30px; cursor:pointer" onclick="openNav()"> &equiv;</span>
+                  </li>        
+                </ul>
+			</nav>
+            </div>
+            
+          <div id="new_div">
+              <section id="main_section">
+					<canvas id="canvas1" width="70" height="70" onclick="loop(1,1)"></canvas>
+                    <canvas id="canvas2" width="70" height="70" onclick="loop(2,1)"></canvas>
+                    <canvas id="canvas3" width="70" height="70" onclick="loop(3,1)"></canvas><br/>
+                    <canvas id="canvas4" width="70" height="70" onclick="loop(4,1)"></canvas>
+                    <canvas id="canvas5" width="70" height="70" onclick="loop(5,1)"></canvas>
+                    <canvas id="canvas6" width="70" height="70" onclick="loop(6,1)"></canvas><br/>
+                    <canvas id="canvas7" width="70" height="70" onclick="loop(7,1)"></canvas>
+                    <canvas id="canvas8" width="70" height="70" onclick="loop(8,1)"></canvas>
+                    <canvas id="canvas9" width="70" height="70" onclick="loop(9,1)"></canvas>
+            </div>
+
+            <div id="buttons">
+             
+              <input type="button" class="indexPlayButton" value="Play Again!" onClick="location.href='advancedIndex.html'"  \>
+           </div> 
+            </section>
+          
+			
+        	</div>
+
+
+        <script src="tictacscript.js"></script> 
+	</body>
+</html>
